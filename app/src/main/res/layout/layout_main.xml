@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demo.kithinmak.chatdemo.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg"
+    android:id="@+id/ll_myll">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#00b7ff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headportrait"
+            android:layout_marginLeft="10dp"/>
+
+    <!--<ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/touxiang"
+        android:layout_marginLeft="10dp"/>-->
+
+
+</LinearLayout>
+
+<!--
+1、TabHost　　　　可自定义id
+2、TabWidget　　　必须设置android:id为@android:id/tabs
+3、FrameLayout　  必须设置android:id为@android:id/tabcontent
+-->
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp">
+
+        <android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp">
+
+        </android.support.v4.app.FragmentTabHost>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/gray"/>
+
+
+    </RelativeLayout>
+
+
+
+</demo.kithinmak.chatdemo.view.MyLinearLayout>

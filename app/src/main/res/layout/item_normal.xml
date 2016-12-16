@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_left"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/headportrait"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/civ_left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:textSize="18sp"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/civ_left"
+            android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_name"
+        android:text="时间"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/red_bg"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="1"
+        />
+
+</RelativeLayout>
